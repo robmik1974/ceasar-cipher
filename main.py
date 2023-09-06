@@ -24,7 +24,7 @@ def main():
     os.system('clear')
     print(logo)
     should_stop = False
-    while not is_stopped:
+    while not should_stop:
         direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
         text = input("Type your message:\n").lower()
         shift = int(input("Type the shift number:\n"))
@@ -34,7 +34,6 @@ def main():
         if answer == 'no':
             should_stop = True
             print("Goodbye")
-
 
 
 if __name__ == "__main__":
